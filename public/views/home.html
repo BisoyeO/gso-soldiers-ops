@@ -3,10 +3,16 @@
 	<h5>{{currentUserData.user.role.class}}: {{currentUserData.user.role.position}}</h5>
 
 	<h4>What would you like to do?</h4>
-	
+
 	<div class="form-group" id="ability-1">
         <div data-ng-repeat="(index,ability) in currentUserData.user.abilities">
             <p id="ab-{{index}}">{{ability}}</p>
         </div>
     </div>
+
+		<div class="form-group" id="ability-2">
+	        <div data-ng-repeat="(index,request) in request_medical">
+	            <p id="ab-{{index}}">{{request}}</p>
+	        </div>
+	    </div>
 </div>
